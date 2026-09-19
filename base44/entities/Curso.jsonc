@@ -27,6 +27,16 @@
       "type": "string",
       "title": "Nome do Instrutor"
     },
+    "data_inicio": {
+      "type": "string",
+      "format": "date",
+      "title": "Data de In\u00edcio"
+    },
+    "data_termino": {
+      "type": "string",
+      "format": "date",
+      "title": "Data de T\u00e9rmino"
+    },
     "valor": {
       "type": "number",
       "title": "Valor"

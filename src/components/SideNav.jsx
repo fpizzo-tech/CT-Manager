@@ -7,6 +7,7 @@ import {
   BookOpen,
   Building2,
   Network,
+  CalendarDays,
   LogOut,
   ShieldCheck,
 } from "lucide-react";
@@ -18,6 +19,7 @@ const navItems = [
   { to: "/alunos", label: "Alunos", icon: Users },
   { to: "/instrutores", label: "Instrutores", icon: GraduationCap },
   { to: "/cursos", label: "Cursos", icon: BookOpen },
+  { to: "/calendario", label: "Calendário", icon: CalendarDays },
   { to: "/empresas", label: "Empresas", icon: Building2 },
   { to: "/relacionamentos", label: "Relacionamentos", icon: Network },
 ];

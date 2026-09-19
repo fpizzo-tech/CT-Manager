@@ -34,6 +34,8 @@ const formFields = [
     fkSource: "instrutor_id",
     placeholder: "Selecione o instrutor",
   },
+  { name: "data_inicio", label: "Data de Início", type: "date" },
+  { name: "data_termino", label: "Data de Término", type: "date" },
   { name: "valor", label: "Valor (R$)", type: "number", placeholder: "0.00" },
   { name: "ativo", label: "Ativo", type: "boolean" },
 ];

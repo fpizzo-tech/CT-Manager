@@ -19,6 +19,7 @@ import Instrutores from '@/pages/Instrutores';
 import Cursos from '@/pages/Cursos';
 import Empresas from '@/pages/Empresas';
 import Relacionamentos from '@/pages/Relacionamentos';
+import Calendario from '@/pages/Calendario';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -58,6 +59,7 @@ const AuthenticatedApp = () => {
           <Route path="/cursos" element={<Cursos />} />
           <Route path="/empresas" element={<Empresas />} />
           <Route path="/relacionamentos" element={<Relacionamentos />} />
+          <Route path="/calendario" element={<Calendario />} />
         </Route>
       </Route>
       <Route path="*" element={<PageNotFound />} />
