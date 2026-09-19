@@ -1,0 +1,51 @@
+{
+  "name": "Aluno",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string",
+      "title": "Nome"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+    },
+    "telefone": {
+      "type": "string",
+      "title": "Telefone"
+    },
+    "cpf": {
+      "type": "string",
+      "title": "CPF"
+    },
+    "data_nascimento": {
+      "type": "string",
+      "format": "date",
+      "title": "Data de Nascimento"
+    },
+    "empresa_id": {
+      "type": "string",
+      "title": "Empresa (FK)",
+      "description": "Refer\u00eancia para Empresa.id"
+    },
+    "empresa_nome": {
+      "type": "string",
+      "title": "Nome da Empresa"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ativo",
+        "inativo",
+        "pendente"
+      ],
+      "default": "ativo",
+      "title": "Status"
+    }
+  },
+  "required": [
+    "nome",
+    "email"
+  ]
+}

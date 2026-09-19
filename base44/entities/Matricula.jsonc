@@ -1,0 +1,54 @@
+{
+  "name": "Matricula",
+  "type": "object",
+  "properties": {
+    "aluno_id": {
+      "type": "string",
+      "title": "Aluno (FK)",
+      "description": "Refer\u00eancia para Aluno.id"
+    },
+    "aluno_nome": {
+      "type": "string",
+      "title": "Nome do Aluno"
+    },
+    "curso_id": {
+      "type": "string",
+      "title": "Curso (FK)",
+      "description": "Refer\u00eancia para Curso.id"
+    },
+    "curso_titulo": {
+      "type": "string",
+      "title": "T\u00edtulo do Curso"
+    },
+    "empresa_id": {
+      "type": "string",
+      "title": "Empresa (FK)",
+      "description": "Refer\u00eancia para Empresa.id do aluno"
+    },
+    "empresa_nome": {
+      "type": "string",
+      "title": "Nome da Empresa"
+    },
+    "data_matricula": {
+      "type": "string",
+      "format": "date",
+      "title": "Data da Matr\u00edcula"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pendente",
+        "ativo",
+        "concluido",
+        "cancelado"
+      ],
+      "default": "pendente",
+      "title": "Status"
+    }
+  },
+  "required": [
+    "aluno_id",
+    "curso_id",
+    "data_matricula"
+  ]
+}

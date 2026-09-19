@@ -1,0 +1,40 @@
+{
+  "name": "Instrutor",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string",
+      "title": "Nome"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+    },
+    "telefone": {
+      "type": "string",
+      "title": "Telefone"
+    },
+    "cpf": {
+      "type": "string",
+      "title": "CPF"
+    },
+    "especialidade": {
+      "type": "string",
+      "title": "Especialidade"
+    },
+    "biografia": {
+      "type": "string",
+      "title": "Biografia"
+    },
+    "ativo": {
+      "type": "boolean",
+      "default": true,
+      "title": "Ativo"
+    }
+  },
+  "required": [
+    "nome",
+    "email"
+  ]
+}
